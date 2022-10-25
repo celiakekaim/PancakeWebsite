@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-bottom: 10px;
+      }
+      .container > h2 {
+        text-align: center;
+      }
+
+      #main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        padding: 10px;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+        row-gap: 90px;
+        column-gap: 10px;
+        align-content: center;
+        justify-content: center;
+      }
+      .flex-container > div {
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+      }
+      .grid-container {
+        display: grid;
+        width: 300px;
+        border: solid 2px;
+      }
+      .grid-container > p {
+        border: solid 1px;
+        width: 300px;
+      }
+    </style>
+    <ul id="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Learn</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="container">
+      <h2>Pancakes</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/pic1.jpg" alt="Los Angeles" style="width: 100%" />
+          </div>
+
+          <div class="item">
+            <img
+              src="images/greenpancake.jpg"
+              alt="A stack of Green pancakes"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="images/chocolatepancake.jpg"
+              alt="A stack of chocolate pancakes"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="images/blueberrypancake.jpg"
+              alt="A stack of blueberry pancakes"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="grid-container">
+        <img src="images/blueberrypancake.jpg" alt="blueberrypancake" />
+        <p>Product Description Here</p>
+        <p style="color: green">$$$$</p>
+        <p style="color: gray">At Store X</p>
+      </div>
+      <div class="grid-container">
+        <img src="images/chocolatepancake.jpg" alt="chocolatepancake" />
+        <p>Product Description Here</p>
+        <p style="color: green">$$$$</p>
+        <p style="color: gray">At Store X</p>
+      </div>
+      <div class="grid-container">
+        <img src="images/greenpancake.jpg" alt="greenpancake" />
+        <p>Product Description Here</p>
+        <p style="color: green">$$$$</p>
+        <p style="color: gray">At Store X</p>
+      </div>
+      <div class="grid-container">
+        <img src="images/pic1.jpg" alt="pancakes" />
+        <p>Product Description Here</p>
+        <p style="color: green">$$$$</p>
+        <p style="color: gray">At Store X</p>
+      </div>
+      <div class="grid-container">
+        <img src="images/blueberrypancake.jpg" alt="blueberrypancake" />
+        <p>Product Description Here</p>
+        <p style="color: green">$$$$</p>
+        <p style="color: gray">At Store X</p>
+      </div>
+      <div class="grid-container">
+        <img src="images/chocolatepancake.jpg" alt="chocolatepancake" />
+        <p>Product Description Here</p>
+        <p style="color: green">$$$$</p>
+        <p style="color: gray">At Store X</p>
+      </div>
+      <div class="grid-container">
+        <img src="images/greenpancake.jpg" alt="greenpancake" />
+        <p>Product Description Here</p>
+        <p style="color: green">$$$$</p>
+        <p style="color: gray">At Store X</p>
+      </div>
+      <div class="grid-container">
+        <img src="images/pic1.jpg" alt="pancakes" />
+        <p>Product Description Here</p>
+        <p style="color: green">$$$$</p>
+        <p style="color: gray">At Store X</p>
+      </div>
+    </div>
+  </body>
+</html>
